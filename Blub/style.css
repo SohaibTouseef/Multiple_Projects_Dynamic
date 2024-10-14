@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 30%; */
+  }
+  .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+  }
