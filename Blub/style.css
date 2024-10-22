@@ -9,14 +9,19 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 30%; */
+    width: 60%;
   }
   .btns {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background-color: green;
+    background-color: #FFF100;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .btns:hover{
+    background-color: #C62E2E;
   }
