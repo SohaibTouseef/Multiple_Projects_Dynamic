@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0,0,33);
+    color: white;
+    font-family: "Poppins",sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li {
+    list-style-type: none;
+    margin: 0 23px;
+}
+nav ul li a {
+   text-decoration: none;
+   color: white;
+}
+nav ul li a:hover{
+    color: rgb(153,153,226);
+    font-size: 1.01rem;
+
+ }
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+   
+}
+
+.firstSection > div{
+   width: 40%;
+ 
+}
+.leftSection{
+    font-size: 3rem;
+    margin: 60px 0;
+    
+}
+.rightSection img{
+    width: 50%;
+    border-radius: 50%;
+    
+}
+
+.purple{
+    color: rgb(170, 107,228);
+}
+#element{
+    color: rgb(170, 107,228);
+}
+
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+main hr {
+border: 0;
+background-color:  #9c97f1;
+height: 1.2px;
+margin: 40px 84px;
+}
+
+.text-grey{
+    color: gray;
+}
+.secondSection .box{
+    background-color: white;
+    width:85vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+.img-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-tile{
+   position: relative;
+   top: 75px;
+   width: 150px;
+}
+
+.vertical-desc{
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+}

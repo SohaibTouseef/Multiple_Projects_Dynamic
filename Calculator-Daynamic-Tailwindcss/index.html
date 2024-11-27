@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+       
+        </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container w-full h-screen bg-slate-800 flex items-center justify-center">
+        <div class="calculator bg-blue-500 border-none p-5 rounded-xl">
+            <form>
+                <div class="display">
+                    <input class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer"  type="text" name="display" required>
+                </div>
+                <div>
+             <input onclick="display.value = '' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="AC">
+                    <input onclick="display.value = display.value.slice(0,-1)" class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="DEL" class="operator">
+                    <input onclick="display.value += '.' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value=".">
+                    <input onclick="display.value += '/' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="/">
+                </div>
+                <div>
+                    <input onclick="display.value += '7' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="7">
+                    <input onclick="display.value += '8' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="8">
+                    <input onclick="display.value += '9' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="9">
+                    <input onclick="display.value += '*' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="*">
+                </div>
+                <div>
+                    <input onclick="display.value += '4' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="4">
+                    <input onclick="display.value += '5' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="5">
+                    <input onclick="display.value += '6' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="6">
+                    <input onclick="display.value += '-' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="-">
+                </div>
+                <div>
+                    <input onclick="display.value += '1' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="1">
+                    <input onclick="display.value += '2' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="2">
+                    <input onclick="display.value += '3' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="3">
+                    <input onclick="display.value += '+' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="+">
+                </div>
+                <div>
+                    <input onclick="display.value += '00' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="00">
+                    <input onclick="display.value += '0' " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="0">
+                    <input onclick="display.value =eval(display.value) " class="border-none outline-none w-16 h-16 rounded-xl shadow-sm bg-transparent text-xl text-white m-10 cursor-pointer" type="button" value="=" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<script src="script.js"></script>
+</html>
